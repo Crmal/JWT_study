@@ -22,7 +22,6 @@ router.post('/token', async (req, res) => {
 });
 
 router.get('/test', verifyToken, (req, res) => {
-  console.log("1");
   res.json(req.decoded);
 });
 
